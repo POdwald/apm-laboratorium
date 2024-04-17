@@ -2,7 +2,16 @@
     <string name="app_name">Project2</string>
     <string name="radio_button_bubblesort">Sort using bubble sort</string>
     <string name="radio_button_quicksort">Sort using quicksort</string>
-    <string name="text_view_insert_unsorted">Insert values seperated by comma:</string>
+    <string name="text_view_insert_unsorted">Insert values separated by comma:</string>
     <string name="editText_input_hint">Example: 2,4,6,1,-5</string>
     <string name="button_sort_text">Sort</string>
+    <string name="textView_sort_description_help">Select a sorting algorithm to display a quick description about it!</string>
+    <string name="bubblesort_description">Bubble sort repeatedly compares adjacent elements
+        and swaps them if they are in the wrong order.
+        It continues this process until the list is sorted.
+        While simple, it\'s inefficient for large datasets.</string>
+    <string name="quicksort_description">Quick sort selects a \'pivot\' element,
+        partitions the array into elements smaller and larger than the pivot,
+        and recursively sorts the partitions. It\'s highly efficient on average,
+        but can be slow in its worst-case scenario.</string>
 </resources>
