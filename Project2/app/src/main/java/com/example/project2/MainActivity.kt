@@ -1,5 +1,6 @@
 package com.example.project2
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
@@ -9,6 +10,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,8 +44,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         val outputString = numbersArray.joinToString(",")
-        val outputTextView: TextView = findViewById(R.id.textView_output_values)
-        outputTextView.text = outputString
+        val intent = Intent(
+            this@MainActivity,
+            MainActivity2::class.java
+        )
+        intent.putExtra("outputString", outputString)
+        startActivity(intent)
     }
 
     private fun bubbleSort(array: IntArray) {
