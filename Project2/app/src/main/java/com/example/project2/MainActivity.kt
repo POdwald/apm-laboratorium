@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
-    fun sortNumbers() {
+    fun sortNumbers(view: View) {
         val stringArrayText: EditText = findViewById(R.id.stringArray)
         val sortDescriptionText: TextView = findViewById(R.id.textView_sort_description)
         val radioButtonBubbleSort: RadioButton = findViewById(R.id.radioButton_bubblesort)
