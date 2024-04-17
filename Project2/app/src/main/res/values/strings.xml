@@ -14,4 +14,7 @@
         partitions the array into elements smaller and larger than the pivot,
         and recursively sorts the partitions. It\'s highly efficient on average,
         but can be slow in its worst-case scenario.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_back">Back</string>
 </resources>

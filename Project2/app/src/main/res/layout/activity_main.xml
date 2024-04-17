@@ -7,84 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView_insert_help"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="82dp"
-        android:layout_marginBottom="13dp"
-        android:text="@string/text_view_insert_unsorted"
-        app:layout_constraintBottom_toTopOf="@+id/stringArray"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="303dp"
-        android:layout_height="115dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginBottom="56dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button_sort"
-        app:layout_constraintStart_toStartOf="@+id/stringArray"
-        app:layout_constraintTop_toTopOf="@+id/textView_insert_help">
-
-        <RadioButton
-            android:id="@+id/radioButton_bubblesort"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_button_bubblesort" />
-
-        <RadioButton
-            android:id="@+id/radioButton_quicksort"
-            android:layout_width="176dp"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_button_quicksort" />
-    </RadioGroup>
-
-    <EditText
-        android:id="@+id/stringArray"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="108dp"
-        android:ems="10"
-        android:hint="@string/editText_input_hint"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/button_sort"
-        app:layout_constraintStart_toStartOf="@+id/textView_insert_help"
-        app:layout_constraintTop_toBottomOf="@+id/textView_insert_help" />
-
-    <Button
-        android:id="@+id/button_sort"
-        android:layout_width="125dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="31dp"
-        android:onClick="sortNumbers"
-        android:text="@string/button_sort_text"
-        app:layout_constraintBottom_toTopOf="@+id/textView_output_values"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stringArray" />
-
-    <TextView
-        android:id="@+id/textView_output_values"
-        android:layout_width="358dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="33dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView_sort_description"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_sort" />
-
-    <TextView
-        android:id="@+id/textView_sort_description"
-        android:layout_width="356dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="223dp"
-        android:text="@string/textView_sort_description_help"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_output_values" />
+        app:layout_constraintBottom_toBottomOf="parent">
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
